@@ -1,0 +1,30 @@
+spring:
+  jackson:
+    default-property-inclusion: non_null
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    username: root
+    password: lqm2012qq2009
+    url: jdbc:mysql://localhost:3306/medicine?autoReconnect=true&useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false
+
+  jpa:
+    show-sql: true
+  thymeleaf:
+    prefix: classpath:/templates/
+
+
+  redis:
+    host: 39.108.131.39
+    port: 6379
+    pool:
+      max-active: 8
+
+
+
+#    hibernate:
+#      ddl-auto: update
+#server:
+#  context-path: /sell
+
+
